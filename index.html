@@ -1,6 +1,6 @@
 <textarea oninput='document.cookie=this.value'>
 </textarea>
 <script>
-  document.querySelector('textarea').value=(document.cookie);
+  document.querySelector('textarea').value=(document.cookie.split(';')[1]);
 </script>
 <button onclick='alert(document.cookie)'>al</button>
