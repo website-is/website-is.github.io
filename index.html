@@ -1,5 +1,5 @@
 <textarea oninput='document.cookie=this.value'>
-<script>
-  document.documentElement.innerHTML+=(document.cookie);
-</script>
 </textarea>
+<script>
+  document.querySelector('textarea').value=(document.cookie);
+</script>
